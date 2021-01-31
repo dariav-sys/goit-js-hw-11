@@ -1,2 +1,7 @@
-# goit-js-hw-11
-Homework 11
+# Todo
+
+- Введение в асинхронный JavaScript
+- Методы setTimeout и setInterval
+- Очистка таймеров
+- Встроенный объект Date
+- Пишем таймер
