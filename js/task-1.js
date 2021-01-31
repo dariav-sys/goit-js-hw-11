@@ -13,8 +13,6 @@ let stopBtn = document.querySelector('[data-action = "stop"]');
 
 
 
-
-
 startBtn.addEventListener('click', startBtnHandler);
 stopBtn.addEventListener('click', stopBtnHadler);
 
@@ -28,14 +26,14 @@ function setRandomColor() {
 
 let interval;
 
-function startBtnHandler() {
-    startBtn.removeEventListener('click', startBtnHandler); 
+function startBtnHandler() {    
     interval = setInterval(() => setRandomColor(), 1000); 
+    startBtn.disabled = true;
 }
 
 function stopBtnHadler() {
     clearInterval(interval);
-    startBtn.addEventListener('click', startBtnHandler);
+    startBtn.disabled = false;
 }
 
 
